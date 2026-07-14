@@ -1,5 +1,5 @@
 export default function Day1VariablesFunctions() {
-    // const name = "John";
+    const name = "John";
     let age = 21;
 
 
@@ -23,7 +23,38 @@ export default function Day1VariablesFunctions() {
         return `${x} x ${y} = ${x * y}`;
      }
 
-     const fullName = () =>{
+     const fullName = (firstName, lastName) =>{
+        return `${firstName} ${lastName}`;
+     }
+
+     const ageNextYear = (age) =>{
+        return age + 1;
+     }
+
+     const adult = (age) => {
+        if(age >= 20){
+            return `Your age is ${age} so you're adult`
+        } else{
+            return `Your age is ${age} so you're not a adult`
+        }
+     }
+
+     const rectangleArea = () =>{
+        let width = 5;
+        let height = 8;
+        let area = width * height;
+
+        return `
+        width: ${width}
+        height: ${height}
+        area: ${area}`
+     }
+
+     const circle = (radius) =>{
+        const area = Math.PI * radius ** 2;
+
+        return `A circle with radius of ${radius} has an area of ${area}`;
+
         
      }
 
@@ -46,6 +77,11 @@ export default function Day1VariablesFunctions() {
             <p>{introduce("ian")}</p>
             <p>add: {add(5,3)}</p>
             <p>multiply: {multiply(5,3)}</p>
+            <p>My full name is {fullName("Ian Khristopher", "Teves")} and my age next year is {ageNextYear(21)}</p>
+            <p>{adult(19)}</p>
+            <hr />
+            <pre>Rectangle Area: {rectangleArea()}</pre>
+            <p>{circle(7)}</p>
         </div>
         
 
