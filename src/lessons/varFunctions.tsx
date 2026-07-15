@@ -53,10 +53,18 @@ export default function Day1VariablesFunctions() {
      const circle = (radius) =>{
         const area = Math.PI * radius ** 2;
 
-        return `A circle with radius of ${radius} has an area of ${area}`;
-
-        
+        return `A circle with radius of ${radius} has an area of ${area}`;        
      }
+
+     const EvenOdd = (number) => {
+       if(number % 2 == 0 ){
+         return `even`;
+       } else{
+         return `odd`;
+       }
+     }
+
+     const divide = (a,b) => a / b;
 
     return(
         <div>
@@ -82,6 +90,9 @@ export default function Day1VariablesFunctions() {
             <hr />
             <pre>Rectangle Area: {rectangleArea()}</pre>
             <p>{circle(7)}</p>
+
+            <p>Even or Odd: {EvenOdd(78)}</p>
+            <p>Divide: {divide(12,2)}</p>
         </div>
         
 
