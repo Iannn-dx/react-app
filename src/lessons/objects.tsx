@@ -22,9 +22,15 @@ export default function day3onject(){
     } = user;
 
     const student = {
-      name: "John",
+      nameF: "John",
       section: "A"
     };
+
+    const {nameF, section} = student;
+
+    const {
+      nameF: studentName
+    } = student;
 
   return (
     <div>
@@ -40,6 +46,11 @@ export default function day3onject(){
         <p>{price}</p>
         <p>{brand}</p>
         <p>{prod}</p>
+      </div>
+
+      <div>
+        <p>{studentName}</p>
+        <p>{section}</p>
       </div>
     </div>
   )
