@@ -19,6 +19,16 @@ export default function Day2Arrays() {
         age: 22
       },
     ];
+
+    
+      const numbers = [1,2,3,22,5,6,7,8,16,10];
+
+      const evenNum = () => {
+        return numbers.filter(numbers => numbers % 2 == 0);
+      }
+
+
+
     // map
     // users.map(users => (
     //   <p key={users.id}>{users.name}</p>
@@ -36,6 +46,12 @@ export default function Day2Arrays() {
                     <p>Age: {user.age}</p>
                 </div>
             ))}
+
+           <p>{evenNum()}</p> 
+
+           <p>{evenNum().map(numbers => (
+            <p key={numbers}>{numbers}</p>
+           ))}</p>
         </div>
     );
 }
