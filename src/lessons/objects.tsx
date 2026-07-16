@@ -32,6 +32,27 @@ export default function day3onject(){
       nameF: studentName
     } = student;
 
+
+    // nested object
+    const profile = {
+
+    name: "Ian",
+
+    address: {
+        city: "Tuguegarao",
+        country: "Philippines"
+    }
+  };
+
+  const employee = {
+    fname: "ian",
+
+    job:{
+      title: "Web Developer",
+      company: "Tech"
+    }
+  };
+
   return (
     <div>
       <h1>Objects, Destructuring & Spread Operator</h1>
@@ -51,6 +72,16 @@ export default function day3onject(){
       <div>
         <p>{studentName}</p>
         <p>{section}</p>
+      </div>
+
+      <div>{profile.address.country}</div>
+
+      <hr />
+
+      <div>
+        <p>First name: {employee.fname}</p>
+        <p>Job: {employee.job.title}</p>
+        <p>Company: {employee.job.company}</p>
       </div>
     </div>
   )
