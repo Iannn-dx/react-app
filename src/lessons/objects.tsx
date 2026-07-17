@@ -53,6 +53,25 @@ export default function day3onject(){
     }
   };
 
+  const profile1 = {
+
+    firstName:"Ian",
+    lastName:"Teves",
+    age:21,
+
+    skills:[
+        "Laravel",
+        " React",
+        " JavaScript"
+    ],
+
+    address:{
+        city:"Tuguegarao",
+        country:"Philippines"
+    }
+
+};
+
   return (
     <div>
       <h1>Objects, Destructuring & Spread Operator</h1>
@@ -82,6 +101,17 @@ export default function day3onject(){
         <p>First name: {employee.fname}</p>
         <p>Job: {employee.job.title}</p>
         <p>Company: {employee.job.company}</p>
+      </div>
+
+      <hr />
+
+      <div>
+        <p>First name: {profile1.firstName}</p>
+        <p>Last name: {profile1.lastName}</p>
+        <p>Age: {profile1.age}</p>
+        <p>Skills: {profile1.skills}</p>
+        <p>Location: {profile1.address.city}, {profile1.address.country}</p>
+       
       </div>
     </div>
   )
